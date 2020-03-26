@@ -45,7 +45,7 @@ class LinebotController < ApplicationController
       "altText": "this is a confirm template",
       "sender": {
         "name": "Cony",
-        "iconUrl": "https://line.me/conyprof"
+        "iconUrl": "cook_lady.png"
       },
       "template": {
           "type": "confirm",
