@@ -46,6 +46,10 @@ class LinebotController < ApplicationController
       "template": {
           "type": "confirm",
           "text": "今日のもくもく会は楽しいですか？",
+          "sender": {
+                "name": "Cony",
+                "iconUrl": "https://line.me/conyprof"
+          }
           "actions": [
               {
                 "type": "message",
