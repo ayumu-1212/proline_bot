@@ -49,7 +49,7 @@ class LinebotController < ApplicationController
       },
       "template": {
           "type": "confirm",
-          "text": "今日のもくもく会は楽しいですか？",
+          "text": "Message.order(updated_at: :desc).limit(1)",
           "actions": [
               {
                 "type": "message",
