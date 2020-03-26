@@ -49,7 +49,7 @@ class LinebotController < ApplicationController
           "sender": {
                 "name": "Cony",
                 "iconUrl": "https://line.me/conyprof"
-          }
+          },
           "actions": [
               {
                 "type": "message",
