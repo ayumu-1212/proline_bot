@@ -49,7 +49,7 @@ class LinebotController < ApplicationController
       },
       "template": {
           "type": "confirm",
-          "text": Message.find(1),
+          "text": Message.find(1).content,
           "actions": [
               {
                 "type": "message",
