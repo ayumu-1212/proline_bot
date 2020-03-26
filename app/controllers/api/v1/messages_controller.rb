@@ -16,7 +16,11 @@ module Api
 
         msg = {
           type: 'text',
-          text: message.content
+          text: message.content,
+          "sender": {
+            "name": "Cony",
+            "iconUrl": "https://i.picsum.photos/id/1039/200/200.jpg"
+          }
         }
         client = Line::Bot::Client.new { |config|
           config.channel_secret = ENV["LINE_CHANNEL_SECRET"]
