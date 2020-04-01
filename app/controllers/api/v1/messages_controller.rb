@@ -22,7 +22,7 @@ module Api
           type: 'text',
           text: message.content,
           "sender": {
-            "name": "Cony",
+            "name": message.name,
             "iconUrl": message.icon
           }
         }
@@ -37,8 +37,9 @@ module Api
 
       private
       def message_params
-        params.require(:message).permit(:content, :icon)
+        params.require(:message).permit(:content, :icon, :name)
       end
+
     end
   end
 end
