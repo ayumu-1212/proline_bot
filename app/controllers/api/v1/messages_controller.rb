@@ -4,6 +4,10 @@ module Api
       require 'line/bot'
       protect_from_forgery
 
+      def new
+        @message = Message.new
+      end
+
       def create
 
         message = Message.new(message_params)
