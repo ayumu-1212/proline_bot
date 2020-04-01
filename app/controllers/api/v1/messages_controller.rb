@@ -23,7 +23,7 @@ module Api
           text: message.content,
           "sender": {
             "name": "Cony",
-            "iconUrl": "https://i.picsum.photos/id/1039/200/200.jpg"
+            "iconUrl": message.icon
           }
         }
         client = Line::Bot::Client.new { |config|
@@ -37,7 +37,7 @@ module Api
 
       private
       def message_params
-        params.require(:message).permit(:content)
+        params.require(:message).permit(:content, :icon)
       end
     end
   end
